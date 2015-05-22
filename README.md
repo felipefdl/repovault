@@ -24,6 +24,7 @@ repovault [PASSWORD] --delete
 ### Example
 ```bash
 $ repovault 123456 "The password of money vault is: 42"
+$ repovault mysshkey $(cat ~/.ssh/id_rsa.pub)
 
 $ repovault 123456
 The password of money vault is: 42
