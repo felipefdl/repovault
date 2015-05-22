@@ -18,7 +18,10 @@ repovault [PASSWORD]
 
 ### Example
 ```bash
-repovault 123456 "The password of money vault is: 42"
+$ repovault 123456 "The password of money vault is: 42"
+
+$ repovault 123456
+"The password of money vault is: 42"
 ```
 
 ## License
