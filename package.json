@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/felipefdl/repovault/issues"
   },
-  "homepage": "https://github.com/felipefdl/repovault#readme"
+  "homepage": "https://github.com/felipefdl/repovault#readme",
+  "dependencies": {
+    "lodash": "^3.9.1",
+    "minimist": "^1.1.1"
+  }
 }
