@@ -1,6 +1,6 @@
 {
   "name": "repovault",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Store your keys or passwords in software repository with security",
   "main": "index.js",
   "scripts": {
