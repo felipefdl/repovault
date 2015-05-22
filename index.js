@@ -108,5 +108,5 @@ if (context.delete) {
 } else if (context.password && context.content) {
     encrypt(context.password, context.content);
 } else {
-    console.log(fs.readFileSync(__dirname + '/help.md', 'utf-8').trim());
+    console.log(fs.readFileSync(__dirname + '/help.md', 'utf-8'));
 }

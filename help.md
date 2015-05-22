@@ -12,5 +12,3 @@ repovault mypassword
 
 To delete data:
 repovault mypassword --delete
-
-.
