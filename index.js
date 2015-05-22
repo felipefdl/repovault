@@ -22,10 +22,13 @@ function read_repo_vault() {
     }
 
     var splitfile = repovault_file.split('\n');
-    var values = [];
+    var values    = [];
 
-    splitfile.forEach(function (value) {
+    splitfile.forEach(function (value, key) {
         if (!value) { return; }
+        if (key === 0 && value.indexOf('#') === 0) {
+            return;
+        }
 
         values.push(value);
     });
@@ -46,9 +49,9 @@ var context   = {
 
 function encrypt() {
     var content = JSON.stringify({'content': context.content});
-    var cipher = crypto.createCipher(ALGORITHM, context.password);
+    var cipher  = crypto.createCipher(ALGORITHM, context.password);
     var crypted = cipher.update(content, 'utf8', 'hex');
-    crypted += cipher.final('hex');
+    crypted    += cipher.final('hex');
     return crypted;
 }
 
@@ -57,9 +60,9 @@ function decrypt() {
         var decipher = crypto.createDecipher(ALGORITHM, context.password);
         var data;
         try {
-            data = decipher.update(value, 'hex', 'utf8');
-            data += decipher.final('utf8');
-            data = JSON.parse(data);
+            data   = decipher.update(value, 'hex', 'utf8');
+            data  += decipher.final('utf8');
+            data   = JSON.parse(data);
         } catch (e) {
             return;
         }
