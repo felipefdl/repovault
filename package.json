@@ -1,0 +1,30 @@
+{
+  "name": "repovault",
+  "version": "0.1.0",
+  "description": "Store your keys or passwords in software repository with security",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "bin": {
+    "repovault": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipefdl/repovault.git"
+  },
+  "keywords": [
+    "repovault",
+    "key",
+    "secret",
+    "ssh",
+    "password",
+    "git"
+  ],
+  "author": "Felipe Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felipefdl/repovault/issues"
+  },
+  "homepage": "https://github.com/felipefdl/repovault#readme"
+}
