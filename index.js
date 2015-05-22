@@ -4,7 +4,7 @@
 var fs        = require('fs');
 var crypto    = require('crypto');
 var _         = require('lodash');
-var argv = require('minimist')(process.argv.slice(2));
+var argv      = require('minimist')(process.argv.slice(2));
 var FILENAME  = 'repo.vault';
 var ALGORITHM = 'aes-256-ctr';
 var HEADER    = '##### To get tool to decrypt it run "npm install -g repovault" (Node.js) #####';
